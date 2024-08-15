@@ -1,0 +1,33 @@
+{
+  "name": "cc-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --ignore-path ./.prettierignore --write ",
+      "eslint --cache"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx,.vue packages/** --fix",
+    "publish:player": "cd packages/cc-player && pnpm publish",
+    "build:player": "cd packages/cc-player && pnpm package",
+    "format": "prettier --ignore-path ./.prettierignore --write packages/**"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
