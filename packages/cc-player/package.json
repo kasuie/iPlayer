@@ -1,8 +1,9 @@
 {
   "name": "cc-player",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": false,
-  "description": "",
+  "author": "kasuie",
+  "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -10,7 +11,5 @@
   ],
   "scripts": {
     "package": "tsup"
-  },
-  "author": "",
-  "license": "MIT"
+  }
 }
