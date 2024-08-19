@@ -11,5 +11,9 @@
   ],
   "scripts": {
     "package": "tsup"
+  },
+  "devDependencies": {
+    "art-template": "^4.13.2",
+    "raw-loader": "^4.0.2"
   }
 }

@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx,.vue packages/** --fix",
     "publish:player": "cd packages/cc-player && pnpm publish",
-    "build:player": "cd packages/cc-player && pnpm package",
+    "build:player": "cd packages/rem-player && pnpm package",
     "format": "prettier --ignore-path ./.prettierignore --write packages/**"
   },
   "author": "",
@@ -30,5 +30,8 @@
     "lint-staged": "^15.2.9",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@kasuie/utils": "^0.0.14"
   }
 }
